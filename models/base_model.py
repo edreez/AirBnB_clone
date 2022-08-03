@@ -18,7 +18,7 @@ class BaseModel:
         """
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
-        self.updated_at =  self.created_at
+        self.updated_at = self.created_at
         for key, value in kwargs.items():
             self.key = value
 
@@ -30,10 +30,10 @@ class BaseModel:
 
     def save(self):
         """
-        Updates the update time
+        Updates the updated_time
         """
         self.updated_at = datetime.now()
-    
+
     def to_dict(self):
         """
         Returns a dictionary containing all the key and value
@@ -41,5 +41,13 @@ class BaseModel:
         """
         self.updated_at = self.updated_at.isoformat()
         self.created_at = self.created_at.isoformat()
-        self.__dict__.update({"__class__" :self.__class__.__name__})
+        self.__dict__.update({"__class__": self.__class__.__name__})
         return self.__dict__
+
+
+
+
+
+bm = BaseModel()
+bm.save()
+print(type(bm.updated_at))
