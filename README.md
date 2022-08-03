@@ -1,5 +1,5 @@
 # AirBnB Clone
-![HBnB Logo](./image/AirBNBlogo.png)
+![HBnB Logo](./images/AirBNBlogo.png)
 
 ## Description :page_facing_up:
 The goal of the project is to deploy on the server a simple copy of the  [AirBnB website](https://www.airbnb.com/ "AirBnB website").
@@ -13,16 +13,13 @@ The complete web application will compose;
 -   An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
 ## Final Product :sunrise:
-![Final Product logo1](./image/FinalProduct1.png)
+![Final Product logo1](./images/FinalProduct1.png)
 
-![Final Product logo2](./image/FinalProduct2.png)
-
-## Environment :computer:
-The console was developed in Ubuntu 14.04LTS using python3 (version 3.4.3).
+![Final Product logo2](./images/FinalProduct2.png)
 
 ## Built with :gear:
 :heavy_check_mark:python3 (3.8.10)
 
 ### Authors :fountain_pen:
-:white_check_mark: Oyetunji Amuzat - @Tunji-L
-:white_check_mark: Olawunmi Idrees - @edreez
+* Oyetunji Amuzat - @Tunji-L
+* Olawunmi Idrees - @edreez
