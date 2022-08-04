@@ -43,11 +43,3 @@ class BaseModel:
         self.created_at = self.created_at.isoformat()
         self.__dict__.update({"__class__": self.__class__.__name__})
         return self.__dict__
-
-
-
-
-
-bm = BaseModel()
-bm.save()
-print(type(bm.updated_at))
