@@ -43,7 +43,7 @@ class FileStorage:
         from models.amenity import Amenity
         from models.state import State
         from models.review import Review
-
+        
         dct = {'BaseModel': BaseModel, 'User': User, 'Place': Place,
                'City': City, 'Amenity': Amenity, 'State': State,
                'Review': Review}
@@ -52,3 +52,4 @@ class FileStorage:
             with open(FileStorage.__file_path, 'r', encoding='utf-8') as f:
                 for key, value in json.load(f).items():
                     self.new(dct[value['__class__']](**value))
+

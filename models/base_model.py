@@ -35,7 +35,8 @@ class BaseModel:
         """
         returns class name, id and the class dict
         """
-        return (f"{[self.__class__.__name__]} ({self.id}) {self.__dict__}")
+        c_name = "[" + self.__class__.__name__ + "]"
+        return c_name + " (" + self.id + ") " + str(self.__dict__)
 
     def save(self):
         """
