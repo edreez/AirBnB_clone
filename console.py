@@ -106,10 +106,6 @@ class HBNBCommand(cmd.Cmd):
         """Prints all string represention of all instances based
         or not on the class name"""
 
-        if not arg:
-            print("** class name missing **")
-            return
-
         args = arg.split(' ')
 
         if args[0] not in HBNBCommand.l_classes:
@@ -122,6 +118,7 @@ class HBNBCommand(cmd.Cmd):
                 if ob_name == args[0]:
                     list_instances += [value.__str__()]
             print(list_instances)
+            return list_instances
 
     def do_update(self, arg):
         """Updates an instance based on the class name and id"""
