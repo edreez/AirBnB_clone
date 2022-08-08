@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A program called console.py that contains the entry 
+A program called console.py that contains the entry
 point of the command interpreter
 """
 import cmd
@@ -25,7 +25,7 @@ class HBNBCommand(cmd.Cmd):
     def help_help(self):
         """Prints command description"""
         print("Provides command description")
-    
+
     def emptyline(self):
         """do nothing"""
         pass
@@ -68,7 +68,7 @@ class HBNBCommand(cmd.Cmd):
                     print(value)
                     return
             print("** no instance found **")
-    
+
     def do_destroy(self, arg):
         """ Deletes an instance based on class name and id """
 
@@ -157,6 +157,7 @@ class HBNBCommand(cmd.Cmd):
             if clss[0] == cls_name:
                 count = count + 1
         print(count)
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

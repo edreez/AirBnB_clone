@@ -14,7 +14,7 @@ class FileStorage:
     """
     __file_path = "file.json"
     __objects = {}
-        
+
     def all(self):
         """returns the dictionary __objects"""
         return FileStorage.__objects
@@ -51,4 +51,4 @@ class FileStorage:
         if exists(FileStorage.__file_path):
             with open(FileStorage.__file_path, 'r', encoding='utf-8') as f:
                 for key, value in json.load(f).items():
-                     self.new(dct[value['__class__']](**value))
+                    self.new(dct[value['__class__']](**value))
