@@ -1,1 +1,1 @@
-html and css
+web static
